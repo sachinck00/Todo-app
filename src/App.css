@@ -1,0 +1,212 @@
+:root{
+  --db : rgb(21, 9, 52);
+  --dr : rgb(161, 16, 16);
+  --lr : rgb(225, 3, 3);
+  --lg : rgb(104, 215, 104);
+  --white : #e1dfdf;
+  --green :rgb(0, 128, 0);
+  --y : rgb(147, 147, 6);
+
+}
+#root{
+  color : var(--db);
+  background-color: var(--white);
+}
+
+.nav{
+  padding :0px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .header span{
+  font-size: 30px;
+  font-family: Tahoma ;
+}
+
+.nav .ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav .ul a{
+  margin : 0px 5px;
+  padding: 3px 14px;
+  font: 16px;
+}
+.theme-btn{
+    margin : 0px;
+  
+}
+
+.body{
+  padding :15px 70px;
+}
+.body .input-feild{
+  display: flex;
+  justify-content: center;
+}
+
+.body .input{
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 16px;
+  width: 70%;
+  border : 1px solid var(--db);
+}
+
+button{
+  background-color: var(--lg); 
+  color: var(--white);
+}
+.list{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+table{
+  font-size: 20px;
+}
+
+.rmbtn {
+  background-color: var(--lr);
+  padding:0px 15px;
+}
+.rmbtn:hover{
+  background-color: var(--dr);
+}
+@media only screen and (max-width :700px ) {
+  .body .input {
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 50%;
+    border: 1px solid var(--db);
+  }  
+
+   button{
+      border-radius: 15px;
+   }
+   .rmbtn {
+       padding: 0px 24px;
+  }
+
+}
+@media only screen and (max-width :650px ) {
+  .body .input {
+    padding: 10px 7px;
+    border-radius: 0px;
+    border: transparent;
+    border-bottom: 1px solid var(--db);
+  }  
+
+   button{
+      border-radius: 15px;
+      margin-left: 15px;
+   }
+   .rmbtn {
+       padding: 0px 24px;
+       font-size: 15px;
+  }
+  .addbtn{
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width :550px ) {
+  .nav{
+    padding :0px 20px;
+  }
+  button{
+    height: 40px;
+    text-align: center;
+  }
+  .addbtn{
+    padding: 5px 25px;
+  }
+  .rmbtn{
+    padding: 5px 25px;
+  }
+  .body .input {
+    width: 70%;
+  }  
+  .body {
+    padding: 13px 40px;
+}
+}
+
+@media only screen and (max-width :510px ) {
+  .body .input {
+    padding: 0px 3px;
+    font-size: 13px;
+    width: 85%; 
+  }  
+  table {
+    font-size: 18px;
+}
+
+  .addbtn{
+    padding: 5px 20px;
+   
+  }
+  .rmbtn{
+    padding: 5px 20px;
+   
+  }
+ 
+
+}
+@media only screen and (max-width :455px ) {
+  .nav{
+    display: block;
+  }
+  .header{
+    text-align: center;
+    margin :5px;
+  }
+ .nav .ul a{
+  margin : 0px 5px;
+  padding: 3px 14px;
+  font: 16px;
+}
+td{
+  font-size: 14px;
+}
+
+}
+@media only screen and (max-width :400px ) {
+  
+  .body {
+    padding: 13px 20px;
+   }
+}
+@media only screen and (max-width :362px ) {
+  
+  .body {
+    padding: 15px 20px;
+   }
+   .rmbtn {
+    padding: 0px 18px;
+    font-size: 12px;
+}
+.addbtn{
+ font-size: 12px;
+}
+
+}
+
+@media only screen and (max-width :330px ) {
+  
+  .body {
+    padding: 15px 10px;
+   }
+}
+
+@media only screen and (max-width :320px ) {
+ .body .input{
+  max-width: 85%;
+ }
+}
